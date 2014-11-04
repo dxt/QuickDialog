@@ -32,7 +32,7 @@ static const int kCellMinimumLabelWidth = 80;
     [super layoutSubviews];
 
     CGSize sizeWithMargin = self.contentView.bounds.size;
-
+    
     if (self.imageView.image!=nil){
         sizeWithMargin = CGSizeMake(sizeWithMargin.width - self.imageView.image.size.width - kCellMarginDouble, sizeWithMargin.height);
     }
@@ -78,7 +78,7 @@ static const int kCellMinimumLabelWidth = 80;
                 valueSize.width,
                 self.contentView.bounds.size.height- kCellMarginDouble);
 
-        CGFloat detailsWidth = self.contentView.bounds.size.width - kCellMarginDouble;
+        CGFloat detailsWidth = self.contentView.bounds.size.width - self.textLabel.frame.origin.x;
         if (valueSize.width>0)
             detailsWidth = detailsWidth - valueSize.width - kCellMarginDouble;
 

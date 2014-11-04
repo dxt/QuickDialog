@@ -87,6 +87,9 @@
                 CGFloat fontSize = self.textLabel.font.pointSize == 0? 17 : self.textLabel.font.pointSize;
                 CGSize size = [((QEntryElement *)el).title sizeWithFont:[self.textLabel.font fontWithSize:fontSize] forWidth:CGFLOAT_MAX lineBreakMode:NSLineBreakByWordWrapping] ;
                 CGFloat width = size.width + imageWidth;
+                if([[[UIDevice currentDevice] systemVersion] floatValue]>=8.f){
+                    width += 5;
+                }
                 if (width>titleWidth)
                     titleWidth = width;
             }
