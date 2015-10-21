@@ -825,6 +825,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"en-US",
 			);
 			mainGroup = D80B0E2813E052DF00FA85CA;
 			productRefGroup = D80B0E3413E052DF00FA85CA /* Products */;
