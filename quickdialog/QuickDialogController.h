@@ -38,11 +38,6 @@
 @property(nonatomic, strong) QuickDialogTableView *quickDialogTableView;
 @property(nonatomic) BOOL resizeWhenKeyboardPresented;
 
-
-@property(nonatomic, strong) UIPopoverController *popoverBeingPresented;
-@property(nonatomic, strong) UIPopoverController *popoverForChildRoot;
-
-
 - (void)loadView;
 
 - (QuickDialogController *)initWithRoot:(QRootElement *)rootElement;

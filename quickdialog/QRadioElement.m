@@ -28,7 +28,7 @@
 
 - (void)createElements {
     _sections = nil;
-    self.presentationMode = QPresentationModeNavigationInPopover;
+    self.presentationMode = QPresentationModeNormal;
     _internalRadioItemsSection = [[QSection alloc] init];
     _parentSection = _internalRadioItemsSection;
 

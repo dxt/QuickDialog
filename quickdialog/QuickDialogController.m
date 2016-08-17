@@ -32,9 +32,6 @@
 @synthesize willDisappearCallback = _willDisappearCallback;
 @synthesize quickDialogTableView = _quickDialogTableView;
 @synthesize resizeWhenKeyboardPresented = _resizeWhenKeyboardPresented;
-@synthesize popoverBeingPresented = _popoverBeingPresented;
-@synthesize popoverForChildRoot = _popoverForChildRoot;
-
 
 + (QuickDialogController *)buildControllerWithClass:(Class)controllerClass root:(QRootElement *)root {
     controllerClass = controllerClass==nil? [QuickDialogController class] : controllerClass;

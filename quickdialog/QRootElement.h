@@ -20,8 +20,6 @@
 
 typedef enum  {
     QPresentationModeNormal = 0,
-    QPresentationModePopover,
-    QPresentationModeNavigationInPopover,
     QPresentationModeModalForm,
     QPresentationModeModalFullScreen,
     QPresentationModeModalPage

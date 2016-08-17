@@ -13,10 +13,6 @@
 
 - (void)dismissModalViewController;
 
-- (void)displayViewControllerInPopover:(UIViewController *)newController withNavigation:(BOOL)navigation fromRect:(CGRect)position;
-
-- (void)displayViewControllerInPopover:(UIViewController *)newController withNavigation:(BOOL)navigation;
-
 - (void)popToPreviousRootElement;
 
 
