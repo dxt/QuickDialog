@@ -30,7 +30,6 @@
     self = [super initWithFrame:CGRectMake(0, 0, 0, 0) style:controller.root.grouped ? UITableViewStyleGrouped : UITableViewStylePlain];
     if (self!=nil){
         _controller = controller;
-        self.root = _controller.root;
         self.deselectRowWhenViewAppears = YES;
 
         quickDialogDataSource = [[QuickDialogDataSource alloc] initForTableView:self];
@@ -39,6 +38,8 @@
         quickDialogDelegate = [[QuickDialogTableDelegate alloc] initForTableView:self];
         self.delegate = quickDialogDelegate;
 
+        self.root = _controller.root;
+        
         self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     }
     return self;
